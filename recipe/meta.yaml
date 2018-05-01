@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/ModelMetrics/ModelMetrics_{{ version }}.tar.gz
   sha256: 487d53fda57da4b29f83a927dda8b1ae6655ab044ee3eec33c38aeb27eed3d85
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
